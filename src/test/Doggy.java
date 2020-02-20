@@ -5,11 +5,12 @@ import java.util.Random;
 public class Doggy implements Pawable<Pawable> {
 
     private static final int idLength= 8;
-    private String name;
-    private String race;
-    private int age;
     private final Sex sex;
-    private String id;
+    private int age;
+    private String 
+        name,
+        race,
+        id;
 
     public Doggy(String name, String race, int age, Sex sex) {
         this.name = name;
@@ -52,7 +53,6 @@ public class Doggy implements Pawable<Pawable> {
 
     @Override
     public String toString() {
-
         return "[doggy - id: "+getId()+", name: "+name+"]";
     }
 
