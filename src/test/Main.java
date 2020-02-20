@@ -3,44 +3,39 @@ package test;
 public class Main {
 
     static Box box = new Box();
-
+    
     static void addThreeKittens() {
-        Kitty Kulka = new Kitty("Kulka", "dachowiec", 2, Sex.FEMALE);
-        Kitty Pazur = new Kitty("Pazur", "maine coon", 6, Sex.MALE);
-        Kitty Zmiataj = new Kitty("Zmiataj", "dachowiec", 7, Sex.MALE);
-
+        Kitty 
+            Kulka = new Kitty("Kulka", "dachowiec", 2, Sex.FEMALE),
+            Pazur = new Kitty("Pazur", "maine coon", 6, Sex.MALE),
+            Zmiataj = new Kitty("Zmiataj", "dachowiec", 7, Sex.MALE);
         box.putInTheBox(Kulka);
         box.putInTheBox(Pazur);
         box.putInTheBox(Zmiataj);
     }
 
     public static void addThreePups() {
-        Doggy Mrok = new Doggy("Mrok", "jamnik", 1, Sex.FEMALE);
-        Doggy Trwoga = new Doggy("Trwoga", "chihuahua", 0, Sex.MALE);
-        Doggy Spioch = new Doggy("Spioch", "owczarek kaukaski", 4, Sex.FEMALE);
-
+        Doggy 
+            Mrok = new Doggy("Mrok", "jamnik", 1, Sex.FEMALE),
+            Trwoga = new Doggy("Trwoga", "chihuahua", 0, Sex.MALE),
+            Spioch = new Doggy("Spioch", "owczarek kaukaski", 4, Sex.FEMALE);
         box.putInTheBox(Mrok);
         box.putInTheBox(Trwoga);
         box.putInTheBox(Spioch);
-
     }
 
     public static void main(String[] args) {
 
         addThreePups();
         addThreeKittens();
-
         box.whatsInBox();
 
         System.out.println("\nwe take outta box");
         box.takeFromTheBox();
 
         System.out.println("\nwe check the box");
-
         box.whatsInBox();
     }
-
-
 }
 
 /**
