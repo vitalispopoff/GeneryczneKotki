@@ -4,11 +4,12 @@ import java.util.Comparator;
 
 public class Kitty implements Comparator, Pawable<Pawable>  {
 
-    private String name;
-    private String race;
-    private int age;
     private final Sex sex;
-    private String id;
+    private int age;
+    private String 
+        id,
+        name,
+        race;    
 
     public Kitty(String name, String race, int age, Sex sex) {
         this.name = name;
