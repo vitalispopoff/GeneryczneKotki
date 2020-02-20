@@ -9,10 +9,8 @@ public class Box</*S,*/ T extends Pawable<T>> {
 //    private HashMap<S, T> theBox;
     private ArrayList<T> theBox = new ArrayList<>();
     
-
     public void putInTheBox(T animal) {
         theBox.add(animal);
-
     }
     
     public T takeFromTheBox(){
@@ -21,14 +19,10 @@ public class Box</*S,*/ T extends Pawable<T>> {
         theBox.remove(glimpseOfLuck);
         System.out.println(inHand.toString());
         return inHand;
-        
     }
 
     public void whatsInBox(){
-        for (T pup: theBox
-             ) {
-            System.out.print(pup.toString()+", ");
-        }
+        for (T pup: theBox) System.out.print(pup.toString()+", ");
     }
 
 /*    public void takeFromTheBox() {
